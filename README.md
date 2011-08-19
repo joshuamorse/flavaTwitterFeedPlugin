@@ -25,6 +25,13 @@ In your view:
       <?php endforeach ?>
     </ul>
 
+Enable the flavaTwitterFeed module in settings.yml:
 
-It's highly recommended that you cache which view you're using to output your
+    enabled_modules:
+    ...
+      - flavaTwitterFeed    
+    ...
+
+
+It is highly recommended that you cache which view you're using to output your
 twitter feed, as twitter imposes an houry limit on API calls.
