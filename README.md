@@ -1,7 +1,7 @@
 flavaTwitterFeedPlugin
 ======================
 
-A very quick and dirty way to pull in a twitter feed in your Symfony
+A very quick and dirty way to pull in a twitter feed into your Symfony
 project.
 
 
@@ -14,7 +14,7 @@ In your actions:
     $this->tweets = $this->getFeed('username', array('count' => 4));
 
 
-In your view:
+In your view (note the use of the output partial; you'll need something like this to escape Symfony's output escaper):
 
 
     <ul id="tweets">
